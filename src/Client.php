@@ -1,8 +1,8 @@
 <?php
 
-namespace PulkitJalan\Google;
+namespace irisdande\Google;
 
-use PulkitJalan\Google\Exceptions\UnknownServiceException;
+use irisdande\Google\Exceptions\UnknownServiceException;
 
 class Client
 {
