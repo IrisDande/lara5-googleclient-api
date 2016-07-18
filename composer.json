@@ -1,0 +1,33 @@
+{
+    "name": "irisdande/google-apiclient",
+    "description": "Google api php client wrapper with Cloud Platform and Laravel 4 & 5 support",
+    "homepage": "https://github.com/IrisDande/google-apiclient",
+    "keywords": ["laravel", "google", "cloud platform"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Antonio Nguyen"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5",
+        "google/apiclient": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*",
+        "mockery/mockery": "0.9.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "IrisDande\\Google\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
