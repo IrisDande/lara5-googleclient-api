@@ -3,12 +3,12 @@ Google Api Client Wrapper
 
 > Google api php client wrapper with Cloud Platform and Laravel 4 & 5 support
 
-[![Build Status](http://img.shields.io/travis/irisdande/google-apiclient.svg?style=flat-square)](https://travis-ci.org/irisdande/google-apiclient)
-[![Scrutinizer Code Quality](http://img.shields.io/scrutinizer/g/irisdande/google-apiclient/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/irisdande/google-apiclient/)
-[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/irisdande/google-apiclient/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/irisdande/google-apiclient/code-structure/master)
+[![Build Status](http://img.shields.io/travis/irisdande/lara5-googleclient-api.svg?style=flat-square)](https://travis-ci.org/irisdande/lara5-googleclient-api)
+[![Scrutinizer Code Quality](http://img.shields.io/scrutinizer/g/irisdande/lara5-googleclient-api/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/irisdande/lara5-googleclient-api/)
+[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/irisdande/lara5-googleclient-api/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/irisdande/lara5-googleclient-api/code-structure/master)
 [![License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](http://www.opensource.org/licenses/MIT)
-[![Latest Version](http://img.shields.io/packagist/v/irisdande/google-apiclient.svg?style=flat-square)](https://packagist.org/packages/irisdande/google-apiclient)
-[![Total Downloads](https://img.shields.io/packagist/dt/irisdande/google-apiclient.svg?style=flat-square)](https://packagist.org/packages/irisdande/google-apiclient)
+[![Latest Version](http://img.shields.io/packagist/v/irisdande/lara5-googleclient-api.svg?style=flat-square)](https://packagist.org/packages/irisdande/lara5-googleclient-api)
+[![Total Downloads](https://img.shields.io/packagist/dt/irisdande/lara5-googleclient-api.svg?style=flat-square)](https://packagist.org/packages/irisdande/lara5-googleclient-api)
 
 ## Requirements
 
@@ -20,13 +20,13 @@ Install via composer - edit your `composer.json` to require the package.
 
 ```js
 "require": {
-    "irisdande/google-apiclient": "2.*"
+    "irisdande/lara5-googleclient-api": "2.*"
 }
 ```
 
 Then run `composer update` in your terminal to pull it in.
 
-Or use `composer require irisdande/google-apiclient`
+Or use `composer require irisdande/lara5-googleclient-api`
 
 ## Laravel
 
@@ -46,7 +46,7 @@ Finally run `php artisan vendor:publish --provider="irisdande\Google\GoogleServi
 
 #### Looking for a Laravel 4 compatible version?
 
-Checkout the [1.0 branch](https://github.com/irisdande/google-apiclient/tree/1.0)
+Checkout the [1.0 branch](https://github.com/irisdande/lara5-googleclient-api/tree/1.0)
 
 ## Usage
 

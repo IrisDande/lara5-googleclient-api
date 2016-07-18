@@ -1,7 +1,7 @@
 {
-    "name": "irisdande/google-apiclient",
+    "name": "irisdande/lara5-googleclient-api",
     "description": "Google api php client wrapper with Cloud Platform and Laravel 4 & 5 support",
-    "homepage": "https://github.com/IrisDande/google-apiclient",
+    "homepage": "https://github.com/IrisDande/lara5-googleclient-api",
     "keywords": ["laravel", "google", "cloud platform"],
     "license": "MIT",
     "authors": [
