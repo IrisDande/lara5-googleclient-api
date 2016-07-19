@@ -1,8 +1,8 @@
 <?php
 
-namespace irisdande\Google;
+namespace IrisDande\Google;
 
-use irisdande\Google\Exceptions\UnknownServiceException;
+use IrisDande\Google\Exceptions\UnknownServiceException;
 
 class Client
 {

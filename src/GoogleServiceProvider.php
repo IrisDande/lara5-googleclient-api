@@ -1,6 +1,6 @@
 <?php
 
-namespace irisdande\Google;
+namespace IrisDande\Google;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,7 +18,7 @@ class GoogleServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->app['irisdande\Google\Client'] = function ($app) {
+        $this->app['IrisDande\Google\Client'] = function ($app) {
             return $app['google.api.client'];
         };
 
@@ -48,6 +48,6 @@ class GoogleServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return ['google.api.client', 'irisdande\Google\Client'];
+        return ['google.api.client', 'IrisDande\Google\Client'];
     }
 }

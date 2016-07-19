@@ -1,6 +1,6 @@
 <?php
 
-namespace irisdande\Google\Exceptions;
+namespace IrisDande\Google\Exceptions;
 
 class UnknownServiceException extends \Exception
 {

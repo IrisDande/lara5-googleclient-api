@@ -1,6 +1,6 @@
 <?php
 
-namespace irisdande\Google\tests;
+namespace IrisDande\Google\tests;
 
 use Mockery;
 use PHPUnit_Framework_TestCase;
@@ -14,30 +14,30 @@ class ClientTest extends PHPUnit_Framework_TestCase
 
     public function testClientGetter()
     {
-        $client = Mockery::mock('irisdande\Google\Client', [[]])->makePartial();
+        $client = Mockery::mock('IrisDande\Google\Client', [[]])->makePartial();
 
         $this->assertInstanceOf('Google_Client', $client->getClient());
     }
 
     public function testServiceMake()
     {
-        $client = Mockery::mock('irisdande\Google\Client', [[]])->makePartial();
+        $client = Mockery::mock('IrisDande\Google\Client', [[]])->makePartial();
 
         $this->assertInstanceOf('Google_Service_Storage', $client->make('storage'));
     }
 
     public function testServiceMakeException()
     {
-        $client = Mockery::mock('irisdande\Google\Client', [[]])->makePartial();
+        $client = Mockery::mock('IrisDande\Google\Client', [[]])->makePartial();
 
-        $this->setExpectedException('irisdande\Google\Exceptions\UnknownServiceException');
+        $this->setExpectedException('IrisDande\Google\Exceptions\UnknownServiceException');
 
         $client->make('storag');
     }
 
     public function testMagicMethodException()
     {
-        $client = new \irisdande\Google\Client([]);
+        $client = new \IrisDande\Google\Client([]);
 
         $this->setExpectedException('BadMethodCallException');
 
@@ -46,14 +46,14 @@ class ClientTest extends PHPUnit_Framework_TestCase
 
     public function testDefaultAuth()
     {
-        $client = new \irisdande\Google\Client([]);
+        $client = new \IrisDande\Google\Client([]);
 
         $this->assertInstanceOf('Google_Auth_OAuth2', $client->getAuth());
     }
 
     public function testAssertCredentials()
     {
-        $client = new \irisdande\Google\Client([
+        $client = new \IrisDande\Google\Client([
             'service' => [
                 'enable' => true,
                 'account' => 'name',
@@ -69,7 +69,7 @@ class ClientTest extends PHPUnit_Framework_TestCase
     {
         $_SERVER['SERVER_SOFTWARE'] = 'Google App Engine';
 
-        $client = new \irisdande\Google\Client([
+        $client = new \IrisDande\Google\Client([
             'service' => [
                 'enable' => true,
             ],
@@ -82,7 +82,7 @@ class ClientTest extends PHPUnit_Framework_TestCase
 
     public function testComputeEngineCredentials()
     {
-        $client = new \irisdande\Google\Client([
+        $client = new \IrisDande\Google\Client([
             'service' => [
                 'enable' => true,
             ],

@@ -1,6 +1,6 @@
 <?php
 
-namespace irisdande\Google\Facades;
+namespace IrisDande\Google\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -33,20 +33,20 @@ Or use `composer require irisdande/lara5-googleclient-api`
 To use in laravel add the following to the `providers` array in your `config/app.php`
 
 ```php
-irisdande\Google\GoogleServiceProvider::class
+IrisDande\Google\GoogleServiceProvider::class
 ```
 
 Next add the following to the `aliases` array in your `config/app.php`
 
 ```php
-'Google' => irisdande\Google\Facades\Google::class
+'Google' => IrisDande\Google\Facades\Google::class
 ```
 
-Finally run `php artisan vendor:publish --provider="irisdande\Google\GoogleServiceProvider" --tag="config"` to publish the config file.
+Finally run `php artisan vendor:publish --provider="IrisDande\Google\GoogleServiceProvider" --tag="config"` to publish the config file.
 
 #### Looking for a Laravel 4 compatible version?
 
-Checkout the [1.0 branch](https://github.com/irisdande/lara5-googleclient-api/tree/1.0)
+Checkout the [1.0 branch](https://github.com/IrisDande/lara5-googleclient-api/tree/1.0)
 
 ## Usage
 
@@ -123,7 +123,7 @@ To use the Google Cloud Platform Services you can either set the information in 
 
 Get `Google_Client`
 ```php
-$client = new irisdande\Google\Client($config);
+$client = new IrisDande\Google\Client($config);
 $googleClient = $client->getClient();
 ```
 
@@ -134,7 +134,7 @@ $googleClient = Google::getClient();
 
 Get a service
 ```php
-$client = new irisdande\Google\Client($config);
+$client = new IrisDande\Google\Client($config);
 
 // returns instance of \Google_Service_Storage
 $storage = $client->make('storage');
